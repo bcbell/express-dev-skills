@@ -1,6 +1,7 @@
 module.exports={
     getAll,
-    getOne
+    getOne,
+    create
     
 }
 
@@ -23,3 +24,9 @@ function getAll(){
     return skills
 }
 
+function create(devSkill){
+    skills.devSkill= skills.devSkill
+    skills.done =false
+    skills.push(devSkill)
+
+}
