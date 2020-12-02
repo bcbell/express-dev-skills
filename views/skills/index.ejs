@@ -10,13 +10,14 @@
     <ul>
         <% skills.forEach(function(skill){ %>
             <li>
-                <%= skill.frontend  %> <%=skill.devtools %> 
-                <%=skill.backend %>
-                <%=skill.database %>
+                <a href="/skills/<%= skill.devSkill%>"><%= skill.devSkill %></a>  
                 :
-                <%=skill.done ? 'Done' : 'Not Done'%>
+                <input type="checkbox" ><%=skill.done ? 'Done' : 'Not Done'%>
             </li>
         <%})  %> 
     </ul>
+    <a href="/">Home</a>
+   <a href="/skills">Developer Skills</a>
+   <a href="/skills/show">Completed Skills</a> 
 </body>
 </html>

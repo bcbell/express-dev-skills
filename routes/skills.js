@@ -4,7 +4,7 @@ const skillsCtrl= require('../controllers/skills')
 
 
 router.get('/', skillsCtrl.index)
-
+router.get('/:devSkill', skillsCtrl.show)
 
 
 
