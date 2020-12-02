@@ -15,8 +15,8 @@ const skills =[
     {id:3256, devSkill:'SASS', done: true} 
 ]
 
-function getOne(id){
-    return skills.find(skill=> skill.id===parseInt(id))
+function getOne(){
+    return skills.find(skill=> skill.devSkill)
 }
 
 function getAll(){
