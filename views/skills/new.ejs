@@ -8,6 +8,20 @@
 </head>
 <body>
     <h1>Developer Skills </h1>
-    <a href="/">Home</a>
-    <a href="/skills">Developer Skills</a>
-    <a href="/skills/new">Add an Additional Skill</a>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/skills">Developer Skills</a>
+        <a href="/skills/new">Add New Skill</a>
+    </nav>
+    <br>
+    <h5>Add an Additional Skill Below:</h5>
+    <br>
+    <form action="/skills" method="POST">
+        <input type="text" name="skill">
+        <button type="submit">Submit</button>  
+    </form>
+
+
+
+</body>
+</html>
