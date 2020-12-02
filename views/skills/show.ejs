@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <h1>Developer Skills </h1>
-        
-   <h2><%= skill.devSkill%></h2> 
+
+    
+        <h2><%= skill.devSkill%></h2> 
+        <h3><%= skill.skill %></h3>
+        <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
+     
+   <a href="/">Home</a>
+    <a href="/skills">Developer Skills</a>
+    <a href="/skills/show">Completed Skills</a>      
+   
+    
     
    
     
@@ -16,8 +26,6 @@
     
       
     </ul>
-    <a href="/">Home</a>
-    <a href="/skills">Developer Skills</a>
-    <a href="/skills/show">Completed Skills</a> 
+    
 </body>
 </html>

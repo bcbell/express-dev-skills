@@ -15,8 +15,8 @@ const skills =[
     {id:3256, devSkill:'SASS', done: true} 
 ]
 
-function getOne(){
-    return skills.find(skill=> skill.devSkill)
+function getOne(devSkill){
+    return skills.find(skill => skill.devSkill === devSkill)
 }
 
 function getAll(){
