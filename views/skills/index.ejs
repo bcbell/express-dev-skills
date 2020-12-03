@@ -16,11 +16,14 @@
     </nav>
     <ul>
         <% skills.forEach(function(skill){ %>
-            <li>
+            <ol>
+               
                 <a href="/skills/<%= skill.devSkill%>"><%= skill.devSkill %></a>  
                 :
-                <input type="checkbox" ><%=skill.done ? 'Done' : 'Not Done'%>
-            </li>
+                <input type="hidden" ><%=skill.done ? 'Done' : 'Not Done'%>
+
+            </ol>
+          
         <%})  %> 
     </ul>
   

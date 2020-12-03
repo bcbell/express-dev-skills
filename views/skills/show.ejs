@@ -9,9 +9,12 @@
 <body>
     <h1>Developer Skills </h1>
 
+       <h2><%= skill.devSkill%></h2>
+       <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
     
-        <h2><%= skill.devSkill%></h2> 
-        <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
+         <form action="/skills/<%=skill.devSkill%>?_method=DELETE" class= "delete-form" method="POST">
+            <button type="submit">Delete</button> 
+            </form>
      
    <a href="/">Home</a>
     <a href="/skills">Developer Skills</a>

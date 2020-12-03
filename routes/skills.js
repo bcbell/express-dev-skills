@@ -7,6 +7,7 @@ router.get('/', skillsCtrl.index)
 router.get('/new', skillsCtrl.new)
 router.get('/:devSkill', skillsCtrl.show)
 router.post('/', skillsCtrl.create)
+router.delete('/:devSkill', skillsCtrl.delete)
 
 
 
