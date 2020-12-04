@@ -28,5 +28,5 @@ function show(req, res){
 
 function deleteSkill(req, res){
     Skill.deleteOne(req.params.devSkill)
-    res.redirect('/skills/new')
+    res.redirect('/skills')
 }
